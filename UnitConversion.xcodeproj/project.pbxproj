@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5B0682AB295DCCA400889626 /* LengthUnitCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0682AA295DCCA400889626 /* LengthUnitCalculation.swift */; };
+		5B0682AD295EB4CA00889626 /* BaseConversionForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0682AC295EB4CA00889626 /* BaseConversionForm.swift */; };
+		5B0682AF295EB7EE00889626 /* TemperatureConversionForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0682AE295EB7EE00889626 /* TemperatureConversionForm.swift */; };
+		5B0682B1295EB81000889626 /* TemperatureUnitCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0682B0295EB81000889626 /* TemperatureUnitCalculation.swift */; };
 		5BD97DC3295DC1B300F80CBF /* UnitConversionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD97DC2295DC1B300F80CBF /* UnitConversionApp.swift */; };
 		5BD97DC5295DC1B300F80CBF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD97DC4295DC1B300F80CBF /* ContentView.swift */; };
 		5BD97DC7295DC1B500F80CBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD97DC6295DC1B500F80CBF /* Assets.xcassets */; };
@@ -17,6 +20,9 @@
 
 /* Begin PBXFileReference section */
 		5B0682AA295DCCA400889626 /* LengthUnitCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthUnitCalculation.swift; sourceTree = "<group>"; };
+		5B0682AC295EB4CA00889626 /* BaseConversionForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseConversionForm.swift; sourceTree = "<group>"; };
+		5B0682AE295EB7EE00889626 /* TemperatureConversionForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureConversionForm.swift; sourceTree = "<group>"; };
+		5B0682B0295EB81000889626 /* TemperatureUnitCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureUnitCalculation.swift; sourceTree = "<group>"; };
 		5BD97DBF295DC1B300F80CBF /* UnitConversion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitConversion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD97DC2295DC1B300F80CBF /* UnitConversionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConversionApp.swift; sourceTree = "<group>"; };
 		5BD97DC4295DC1B300F80CBF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				5B0682AA295DCCA400889626 /* LengthUnitCalculation.swift */,
+				5B0682B0295EB81000889626 /* TemperatureUnitCalculation.swift */,
 			);
 			path = Calculation;
 			sourceTree = "<group>";
@@ -85,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				5BD97DD1295DC5FF00F80CBF /* LengthConversionForm.swift */,
+				5B0682AC295EB4CA00889626 /* BaseConversionForm.swift */,
+				5B0682AE295EB7EE00889626 /* TemperatureConversionForm.swift */,
 			);
 			path = Form;
 			sourceTree = "<group>";
@@ -161,8 +170,11 @@
 			files = (
 				5BD97DD2295DC5FF00F80CBF /* LengthConversionForm.swift in Sources */,
 				5BD97DC5295DC1B300F80CBF /* ContentView.swift in Sources */,
+				5B0682B1295EB81000889626 /* TemperatureUnitCalculation.swift in Sources */,
 				5BD97DC3295DC1B300F80CBF /* UnitConversionApp.swift in Sources */,
 				5B0682AB295DCCA400889626 /* LengthUnitCalculation.swift in Sources */,
+				5B0682AF295EB7EE00889626 /* TemperatureConversionForm.swift in Sources */,
+				5B0682AD295EB4CA00889626 /* BaseConversionForm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

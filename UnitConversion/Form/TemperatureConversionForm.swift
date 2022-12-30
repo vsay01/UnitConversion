@@ -1,41 +1,40 @@
 //
-//  LengthConversionForm.swift
+//  TemperatureConversionForm.swift
 //  UnitConversion
 //
-//  Created by vsay on 12/29/22.
+//  Created by vsay on 12/30/22.
 //
 
 import SwiftUI
 
-struct LengthConversionForm: View {
-    
-    @State var selectedInputUnit = LengthUnitEnum.METER
-    @State var selectedOutputUnit = LengthUnitEnum.METER
+struct TemperatureConversionForm: View {
+    @State var selectedInputUnit = TemperatureUnitEnum.CELSIUS
+    @State var selectedOutputUnit = TemperatureUnitEnum.CELSIUS
     
     @State var inputNumber = 0.0
     
     var outputNumber: Double {
-        return convertLengthUnit(selectedInputUnit, selectedOutputUnit, inputNumber)
+        return convertTemperatureUnit(selectedInputUnit, selectedOutputUnit, inputNumber)
     }
     
     var body: some View {
         Form {
             Section {
-                Picker("Input length Unit", selection: $selectedInputUnit) {
-                    ForEach(LengthUnitEnum.allCases, id:\.self) {
+                Picker("Input temperature Unit", selection: $selectedInputUnit) {
+                    ForEach(TemperatureUnitEnum.allCases, id:\.self) {
                         Text($0.rawValue)
                     }
                 }
                 .pickerStyle(.menu)
                 
-                Picker("Output length Unit", selection: $selectedOutputUnit) {
-                    ForEach(LengthUnitEnum.allCases, id:\.self) {
+                Picker("Output temperature Unit", selection: $selectedOutputUnit) {
+                    ForEach(TemperatureUnitEnum.allCases, id:\.self) {
                         Text($0.rawValue)
                     }
                 }
                 .pickerStyle(.menu)
             } header: {
-                Text("Select Length Unit")
+                Text("Select temperature Unit")
             }
             
             Section {
@@ -54,8 +53,8 @@ struct LengthConversionForm: View {
     }
 }
 
-struct LengthConversionForm_Previews: PreviewProvider {
+struct TemperatureConversionForm_Previews: PreviewProvider {
     static var previews: some View {
-        LengthConversionForm()
+        TemperatureConversionForm()
     }
 }
